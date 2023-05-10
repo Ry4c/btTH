@@ -5,13 +5,18 @@
     <title>JS DEMO</title>
 </head>
 <body>
-<button type="button" onclick="showmessage()">Clickme!</button>
-
+<button type="button" onclick="alert('hello')">alert!</button><hr>
+<button type="button" onclick="document.writeln('hello')">write down</button><hr>
+<button type="button" onclick="console.log('hello')">write console.log</button><hr>
+<button type="button" onclick="writelog()">write console.log2</button><hr>
+<button type="button" onclick="show()">alert2!</button><hr>
+<button type="button" onclick="wdown()">writeln</button>
 
 
 <script>
-  function showmessage() { console.log('hello');}
-
+  function writelog() { console.log('hello');};
+function show() { alert('this is hello alert')};
+  function wdown() { document.writeln('hellothere')};
 </script>
 </body>
 </html>
