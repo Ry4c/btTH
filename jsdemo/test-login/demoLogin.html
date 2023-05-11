@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h2>đăng nhập</h2>
+<table>
+  <tr>
+    <td>Tên đăng nhập</td>
+    <td><input id="usn" type="text"></td>
+  </tr>
+  <tr>
+    <td>Mật khẩu</td>
+    <td><input id="psw" type="password"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button onclick="check()">log in</button></td>
+  </tr>
+</table>
+
+<script>
+  function check() {
+
+    let a= document.getElementById('usn').value
+    let b= document.getElementById('psw').value;
+
+    if (a ='Admin'){
+      if (b ='TheMaster'){
+        alert('Wellcome!');
+      }else if (b='null'){
+        alert('Canceled');
+      }else {
+        alert("I don't know you");
+      }
+    }else if(a='null'){
+      alert('Caneled');
+    }else {
+      alert("I don't know you");
+    }
+  }
+</script>
+</body>
+</html>

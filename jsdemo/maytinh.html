@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may minh demo</title>
+  <style>
+    button { width: 100px}
+    input { width: 195px}
+  </style>
+</head>
+<body>
+<h2>Calculator</h2>
+<input type="number" id="so1">
+<input type="number" id="so2"><br> <br>
+<button onclick="cong()">cong(+)</button>
+<button onclick="tru()">tru(-)</button>
+<button onclick="nhan()">nhan(*)</button>
+<button onclick="chia()">chia(/)</button>
+<p id="kq">Result</p>
+
+<script>
+  function
+  cong() {
+    let a = parseFloat(document.getElementById('so1').value);
+    let b = parseFloat(document.getElementById('so2').value);
+    let c = a+b;
+    kq.innerText=c;
+  };
+  function tru(){
+    let a = parseFloat(document.getElementById('so1').value);
+    let b = parseFloat(document.getElementById('so2').value);
+    let c = a-b;
+    kq.innerText=c;
+  }
+  function nhan() {
+    let a = parseFloat(document.getElementById('so1').value);
+    let b = parseFloat(document.getElementById('so2').value);
+    let c = a*b;
+    kq.innerText=c;
+  }
+  function chia() {
+    let a = parseFloat(document.getElementById('so1').value);
+    let b = parseFloat(document.getElementById('so2').value);
+    let c = a/b;
+    kq.innerHTML=c;
+  }
+</script>
+</body>
+</html>

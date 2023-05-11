@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+<h2>tính năm nhuận</h2>
+<input id="x" type="text">
+<button onclick="check()">kiểm tra</button><br><br>
+<p id="r">kết quả</p>
+<script>
+  function check(){
+    let a= parseInt(document.getElementById('x').value);
+
+    if (a%4==0){
+      if (a%100==0){
+        if (a%400==0){
+          r.innerText=a+' là năm nhuận';
+        }else{ r.innerText=a+' không phải là năm nhuận';}
+      }else{ r.innerText=a+' là năm nhuận';}
+    }else { r.innerText=a+' không phải là năm nhuận'}
+  }
+</script>
+
+
+</body>
+</html>

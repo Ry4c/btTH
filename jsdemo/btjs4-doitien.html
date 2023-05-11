@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doi tien</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Amount</th>
+      <th>From Currency</th>
+      <th>To Currency</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="nhap"></td>
+      <td>
+        <select id="fcurrency">
+          <option value="1">VND</option>
+          <option value="23000">USD</option>
+        </select>
+      </td>
+      <td>
+        <select id="tcurrency">
+          <option value="23000">USD</option>
+          <option value="1">VND</option>
+        </select>
+      </td>
+      <td><button onclick="doi()">chuyen doi</button></td>
+    </tr>
+  </table>
+  <br>
+  <p id="kq"></p>
+  <script src="./js-doitien.js"></script>
+</body>
+</html>
