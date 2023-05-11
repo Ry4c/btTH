@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>swich case demo</title>
+</head>
+<body>
+
+
+<script>
+    let x=prompt('nhap a');
+    let y= x>0;
+    let z= x==0;
+    switch (y) {
+        case true : alert(1);
+        break;
+        case false: switch (z) {
+            case true:
+                alert('0');
+            break;
+            case false:
+                alert('-1');
+                break;
+        }break;
+    }
+</script>
+
+</body>
+</html>

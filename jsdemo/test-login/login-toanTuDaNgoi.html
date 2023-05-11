@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+
+
+<script>
+  let login=prompt('đăng nhập')
+  let access=(login=='employee')?
+          'hello':
+          (login=='Director')?
+                  'Greetings':
+                  (login=='')?
+                          'no login':''
+  alert(access)
+</script>
+</body>
+</html>

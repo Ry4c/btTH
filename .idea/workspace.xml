@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jsdemo/JS-demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/btjs2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/btjs3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/btjs4-doitien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/demoLogin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/js-doitien.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/js-namnhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/maytinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/test-code.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -62,7 +70,8 @@
       <workItem from="1683680233670" duration="5539000" />
       <workItem from="1683691943231" duration="3699000" />
       <workItem from="1683707599203" duration="276000" />
-      <workItem from="1683713147555" duration="930000" />
+      <workItem from="1683713147555" duration="1402000" />
+      <workItem from="1683766007603" duration="13700000" />
     </task>
     <servers />
   </component>
