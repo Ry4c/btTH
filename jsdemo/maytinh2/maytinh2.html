@@ -44,12 +44,13 @@
 
 
   }
-  function add(){
-    //view.value+= this.value
-    let b=document.getElementsByClassName('so') ;
-    console.log(b)
+  function add(value){
+    view.value+= value;
+    
   }
-  function result(){}
+  function result(){
+    view.value= eval(view.value);
+  }
 
 </script>
 </body>
