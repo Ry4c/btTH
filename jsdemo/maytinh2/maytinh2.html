@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+  <style>
+    button { width: 100%}
+  </style>
+</head>
+<body>
+<table>
+  <tr colspan="4"><input type="text" id="view">  </tr>
+  <tr>
+    <td><button class="so" value="1" onclick="add(this.value)">1</button> </td>
+    <td><button class="so" value="2" onclick="add(this.value)">2</button> </td>
+    <td><button class="so" value="3" onclick="add(this.value)">3</button> </td>
+    <td><button class="so" value="+" onclick="add(this.value)">+</button> </td>
+  </tr>
+  <tr>
+    <td><button class="so" value="4" onclick="add(this.value)">4</button> </td>
+    <td><button class="so" value="5" onclick="add(this.value)">5</button> </td>
+    <td><button class="so" value="6" onclick="add(this.value)">6</button> </td>
+    <td><button class="so" value="-" onclick="add(this.value)">-</button> </td>
+  </tr>
+  <tr>
+    <td><button class="so" value="7" onclick="add(this.value)">7</button> </td>
+    <td><button class="so" value="8" onclick="add(this.value)">8</button> </td>
+    <td><button class="so" value="9" onclick="add(this.value)">9</button> </td>
+    <td><button class="so" value="*" onclick="add(this.value)">x</button> </td>
+  </tr>
+  <tr>
+    <td><button value="C" onclick="res()">C</button> </td>
+    <td><button class="so" value="0" onclick="add(this.value)">0</button> </td>
+    <td><button class="so" value="=" onclick="result()">=</button> </td>
+    <td><button class="so" value="/" onclick="add(this.value)">/</button> </td>
+  </tr>
+  </table>
+
+
+<script>
+  let view= document.getElementById('view');
+  function res(){
+    view.value=''
+
+
+  }
+  function add(){
+    //view.value+= this.value
+    let b=document.getElementsByClassName('so') ;
+    console.log(b)
+  }
+  function result(){}
+
+</script>
+</body>
+</html>

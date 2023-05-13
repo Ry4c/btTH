@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI-demo</title>
+</head>
+<body>
+<h2>body check</h2>
+<img src="https://vinmec-prod.s3.amazonaws.com/images/20190515_023453_074691_chi-so-BMI-phan-loa.max-1800x1800.png"><br>
+<input type="text" id="w" value="can nang(kg)">
+<input type="text" id="h" value="chieu cao(m)">
+<button onclick="tinh()">tinh</button>
+<p id="cs">Result</p>
+
+
+<script>
+  function tinh() {
+    let w = parseFloat(document.getElementById('w').value);
+    //let w = document.getElementById('w').valueAsNumber; không nhận!
+    let h = parseFloat(document.getElementById('h').value);
+    let bmi = w / h /h;
+    let cs = null;
+    if (bmi<18.5){cs='gầy';}
+    else if(bmi<25){cs='bình thường';}
+    else if(bmi<30){cs='thừa cân';}
+    else{cs='béo phì';}
+    document.getElementById('cs').innerHTML='BMI= ' +bmi+ ' bạn đang '+cs
+  }
+</script>
+</body>
+</html>

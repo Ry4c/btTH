@@ -7,6 +7,6 @@ function doi() {
     let n = parseFloat(a);
     let m = parseFloat(b);
     let p = parseFloat(c);
-    let q = n / p * m;
+    let q = n / m*p;
     kq.innerText=q;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<img id="anh" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" style = "width: 30%"/>
+<p>Click button below to move the image to right</p>
+<button  onclick="moveright()">move right</button>
+<button  onclick="moverleft()">move left</button>
+<button  onclick="moverup()">move up</button>
+<button  onclick="moverdown()">move down</button>
+
+
+<script>
+
+  function docReady() {
+    let anh = document.getElementById('anh');
+    anh.style.position = 'relative';
+    anh.style.left = '200px';
+    anh.style.top = '100px';
+  }
+
+  function moveright() {anh.style.left = parseInt(anh.style.left)+ 50 + 'px';}
+  function moverleft() {anh.style.left = parseInt(anh.style.left)- 50 + 'px';}
+  function moverup() {anh.style.top = parseInt(anh.style.top)- 50 + 'px';}
+  function moverdown() {anh.style.top = parseInt(anh.style.top) + 50 + 'px';}
+  function lp() {anh.style.left = parseInt(anh.style.left)- 50 + 'px';}
+  function rp() {anh.style.left = parseInt(anh.style.left)+ 50 + 'px';}
+  function up() {anh.style.top = parseInt(anh.style.top)- 50 + 'px';}
+  function dp() {anh.style.top = parseInt(anh.style.top)+ 50 + 'px';}
+  function moveSelection(event) {
+    console.log(event.keyCode)
+
+    switch (event.keyCode) {
+      case 37:
+        lp();
+        break;
+      case 39:
+        rp();
+        break;
+      case 38:
+        up();
+        break;
+      case 40:
+        dp();
+        break;
+    }
+  }
+  window.onload=docReady();
+  window.addEventListener('keydown', moveSelection);
+
+</script>
+</body>
+</html>

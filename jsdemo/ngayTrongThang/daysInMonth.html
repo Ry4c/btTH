@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Days</title>
+</head>
+<body>
+<input type="text" id="thg" >
+<button onclick="kiemtra()">check</button>
+<p id="rs">kết quả ở đây</p>
+
+<script>
+  function kiemtra(){
+    let a=parseInt(document.getElementById('thg').value);
+    let b= null;
+    switch (a){
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        b=' có 31 ngày';
+        break;
+      case 2:
+        b=' có 28 hoặc 29 ngày';
+        break;
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+        b=' có 30 ngày';
+        break;
+      default:
+        b=' is a joke';
+        break;
+    }
+    //console.log(b)
+   document.getElementById('rs').innerHTML='tháng '+ a +b;
+  }
+</script>
+</body>
+</html>
