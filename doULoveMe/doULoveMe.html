@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+<body>
+    <h1>Do you love me?</h1>
+    <button style="left: 150px; top: 300px; width: 60px;" onclick="yes()">Yes</button>
+    <button id="n" onmouseover="no()" style="left: 250px; top: 300px; width: 60px; position: absolute">No</button>
+
+    <script>
+        
+        
+        function yes(){
+            alert('Yes I love you too!');
+        }
+        function no(){          
+            //let x= Math.round(Math.random()*window.innerWidth)+'px';
+            //let y= Math.round(Math.random()*window.innerHeight)+'px';
+            //document.getElementById('n').style.left = '350px';  
+            //document.getElementById('n').style.top = '300px';
+            document.getElementById('n').style.left= Math.round(Math.random()*window.innerWidth)+'px';
+            document.getElementById('n').style.top= Math.round(Math.random()*window.innerHeight)+'px';
+        }
+    </script>
+    
+</body>
+</html>
