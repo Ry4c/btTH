@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tictactoe</title>
+</head>
+<body>
+<pre id="ma"></pre>
+<button onclick="thay()">vi tri</button>
+
+<script>
+let l=0;
+  let arr=[];
+  let n= parseInt(prompt('nhap'));
+  let m= parseInt(prompt('nhap lan nua'));
+  let d = `<table> `;
+  for (let i=0; i<n; i++){
+    arr[i]=[];
+    for (let j=0; j<m; j++){
+      arr[i][j]='(.)';
+    }
+
+  }
+  console.log(arr.length);
+  for (let i=0; i<n; i++) {
+    d += `<tr>`;
+    for (let j = 0; j < m; j++) {
+      d += `<td>${arr[i][j]}</td>`;
+    }
+    d += `</tr>`;
+  }
+  d += `</table>`
+  document.getElementById('ma').innerHTML= d;
+
+
+  function thay(){
+    let a = prompt('nhap toa do ngang');
+    let b = prompt('nhap toa do doc');
+    if (l%2==0) {
+      arr[b - 1][a - 1] = "x";
+      l++;
+    }else {
+      arr[b - 1][a - 1] = "o";
+      l++;
+    }
+    let x =`<table>`
+    for (let i=0; i<n; i++) {
+      x += `<tr>`;
+      for (let j = 0; j < m; j++) {
+        x += `<td>${arr[i][j]}</td>`;
+      }
+      x += `</tr>`;
+    }
+    x += `</table>`
+    document.getElementById('ma').innerHTML= x;
+    let count=0;
+    //xet hang doc
+    for (let i=0;i<m;i++){
+        if( arr[i][a]== arr[a][b]){
+            count++;
+        }else{
+            count = 0;
+        }
+    }
+    //xet hang ngang
+    for (let i=0;i<n;i++){
+        if( arr[b][i]== arr[a][b]){
+            count++;
+        }else{
+            count = 0;
+        }
+    } 
+    //xet duong cheo 1
+    for (let i=0,j=0;i<a||j<b;i++,j++){
+        if( arr[a-i][b-j]== arr[a][b]){
+            count++;
+        }else{
+            count = 0;
+        }
+    }
+    //xet duong cheo 2
+    for (let i=0,j=m;i<n||j>0;i++,j--){
+        if( arr[i][j]== arr[a][b]){
+            count++;
+        }else{
+            count = 0;
+        }
+    }
+
+   /* for(let u=0;u<n-3;u++){
+      for(let v=0; v<m-3; v++){
+        if(!arr[u][v]=='(.)') {
+          switch (arr[u][v]) {
+            case (arr[u + 1][v]):
+              if (arr[u][v] == arr[u + 2][v]) {
+                alert('win');
+              }
+              break;
+            case (arr[u][v + 1]):
+              if (arr[u][v] == arr[u][v + 2]) {
+                alert('win');
+              }
+              break;
+            case(arr[u + 1][v + 1]):
+              if (arr[u][v] == arr[u + 2][v + 2]) {
+                alert('win');
+              }
+              break;
+          }
+        }
+      }
+    }
+*/
+  }
+</script>
+</body>
+</html>

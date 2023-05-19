@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style></style>
+
 </head>
 <body>
 
-
-
-
 <script>
+let a=prompt();
+let b=prompt();
+let m=a.length;
+let n=b.length;
+
+if(m == n){
+    let a1=[];
+    let b1=[];
+    let count=0;
+    for(let i=0; i<a.length; i++){
+        a1[i]=a.charAt(i);
+    }
+    for(let i=0; i<b.length; i++){
+        b1[i]=b.charAt(i);
+    }
+    for(let i=0; i<a1.length; i++){
+        if(b.indexOf(a1[i])>-1){
+            count++;
+        }else {
+            alert('khong giong');
+            break;
+        }
+    }
+    switch (count){
+        case (b.length):
+            alert('giong');
+            break;
+    }
+}else {
+    alert('khong giong');
+}
+console.log(a);
+console.log(b);
+console.log(a1);
+console.log(b1);
+
 
 </script>
 </body>

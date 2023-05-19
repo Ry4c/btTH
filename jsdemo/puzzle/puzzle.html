@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>puzzle demo</title>
+    <style>
+        img{
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<button id="a" onclick="change1(), check()"><img src="./sourcejpg/mk1.jpg"></button><br>
+<button id="b" onclick="change2(), check()"><img src="./sourcejpg/mk2.jpg"></button><br>
+<button id="c" onclick="change3(), check()"><img src="./sourcejpg/panda3.jpg"></button><br>
+<button id="d" onclick="change4(), check()"><img src="./sourcejpg/cat4.jpg"></button><br>
+<button id="e" onclick="change5(), check()"><img src="./sourcejpg/cat5.jpg"></button><br>
+<script>
+  let a1=['<img src="./sourcejpg/cat1.jpg">',
+  '<img src="./sourcejpg/mk1.jpg">',
+  '<img src="./sourcejpg/panda1.jpg">']
+  let a2=['<img src="./sourcejpg/cat2.jpg">',
+  '<img src="./sourcejpg/mk2.jpg">',
+  '<img src="./sourcejpg/panda2.jpg">']
+  let a3=['<img src="./sourcejpg/cat3.jpg">',
+  '<img src="./sourcejpg/mk3.jpg">',
+  '<img src="./sourcejpg/panda3.jpg">']
+  let a4=['<img src="./sourcejpg/cat4.jpg">',
+  '<img src="./sourcejpg/mk4.jpg">',
+  '<img src="./sourcejpg/panda4.jpg">']
+  let a5=['<img src="./sourcejpg/cat5.jpg">',
+  '<img src="./sourcejpg/mk5.jpg">',
+  '<img src="./sourcejpg/panda5.jpg">']
+
+
+  let x=a1.indexOf('<img src="./sourcejpg/mk1.jpg">');
+  let y=a2.indexOf('<img src="./sourcejpg/mk2.jpg">');
+  let z=a3.indexOf('<img src="./sourcejpg/panda3.jpg">');
+  let v=a4.indexOf('<img src="./sourcejpg/cat4.jpg">');
+  let t=a5.indexOf('<img src="./sourcejpg/cat5.jpg">');
+  function change1() {
+      if (x<2) {
+          x++;
+      }else {x=0;};
+    document.getElementById('a').innerHTML= a1[x];
+  }
+  function change2() {
+      if (y<2) {
+          y++;
+      }else {y=0;};
+    document.getElementById('b').innerHTML= a2[y];
+  }
+  function change3() {
+      if (z<2) {
+          z++;
+      }else {z=0;};
+    document.getElementById('c').innerHTML= a3[z];
+  }
+  function change4() {
+      if (v<2) {
+          v++;
+      }else {v=0;};
+    document.getElementById('d').innerHTML= a4[v];
+  }
+  function change5() {
+      if (t<2) {
+          t++;
+      }else {t=0;};
+    document.getElementById('e').innerHTML= a5[t];
+  }
+  function check() {
+      if (x == y) {
+          if (y == z) {
+              if (z == v) {
+                  if (v == t) {
+                      document.getElementById('a').style.border= 'red 2px solid';
+                      document.getElementById('b').style.border= 'red 2px solid';
+                      document.getElementById('c').style.border= 'red 2px solid';
+                      document.getElementById('d').style.border= 'red 2px solid';
+                      document.getElementById('e').style.border= 'red 2px solid';
+
+                  }
+              }
+          }
+      }else {
+          document.getElementById('a').style.border= 'red 0px solid';
+          document.getElementById('b').style.border= 'red 0px solid';
+          document.getElementById('c').style.border= 'red 0px solid';
+          document.getElementById('d').style.border= 'red 0px solid';
+          document.getElementById('e').style.border= 'red 0px solid';
+      }
+  }
+</script>
+</body>
+</html>

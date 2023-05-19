@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RVU</title>
+</head>
+<body>
+<script>
+  let n="The Quick Brown Fox";
+  let m='';
+  for (let i=0;i<n.length;i++){
+    m += n[i].toUpperCase();
+  }
+  let k='';
+  for (let i=0;i<n.length;i++){
+    if(n[i]==m[i]){
+      k += n[i].toLowerCase();
+    }else{
+      k += m[i];
+    }
+  }
+  console.log(m);
+  console.log(k);
+
+</script>
+</body>
+</html>

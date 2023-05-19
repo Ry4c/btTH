@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>them dau -\</title>
+</head>
+<body>
+<script>
+  let n= prompt().toString();
+  let m= n[1];
+  for (let i=1; i<n.length; i++){
+    if (n[i]%2==0 && n[i-1]%2==0){
+      m += '-';
+      m += n[i];
+    }else{
+      m += n[i];
+    }
+  }
+  console.log(m);
+
+</script>
+</body>
+</html>

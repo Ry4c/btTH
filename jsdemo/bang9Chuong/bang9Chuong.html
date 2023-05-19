@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BANG CUU CHUONG</title>
+  <style>
+    table{ border-collapse: collapse}
+    td{
+        border: red 1px solid;
+    }
+  </style>
+</head>
+<body>
+<div id="s"></div>
+
+<script>
+  let a="<table border=' gray 2px solid' width=' 150px' heigh=' 20px' >"
+  let x=1;
+  let y=1;
+  while (x<9){
+      x++;
+      a= a + "<tr>";
+      y=1;
+      while (y<=10){
+         a= a + "<td>"+x+"x"+y+"="+x*y+"</td>";
+         y++;
+      }
+      a= a + "</tr>"+'<br>';
+  }
+  a= a + "</table>";
+  document.getElementById('s').innerHTML=a;
+  console.log(a);
+
+</script>
+</body>
+</html>

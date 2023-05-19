@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  /*//fibonacci
+  let a=0;
+  let b=1;
+  let c=1;
+  let n=parseInt(prompt('nhap do dai cua day so'));
+  console.log(b);
+  for(let i=1;i<=n;i++){
+    c=a+b;
+    a=b;
+    b=c;
+    console.log(c);
+  }*/
+
+ /* //tinh giai thua:
+  let a = parseInt(prompt('nhap a'));
+  let result=1;
+  for (let i = 1;i<=a;i++){result *= i}
+  console.log(result);*/
+
+  /*//ve tam giac xuoi
+  let n =parseInt(prompt('nhap n'));
+  for(let i = 1;i<=n;i++){
+      let v = '';
+      let j = 0;
+      for(; j<i;j++){
+          v += '*';
+      }
+      console.log(v);
+  }*/
+
+ /* //ve tam giac nguoc
+  let n =parseInt(prompt('nhap n'));
+  for(let i = n;i>0;i--){
+      let v = '';
+      let j = 0;
+      for(; j<i;j++){
+          v += '*';
+      }
+      console.log(v);
+  }*/
+/*
+//tinh tong tien nhan ve
+  let a= parseInt(prompt('nhap tien von'));
+  let b= parseInt(prompt('nhap lai suat'));
+  let c= parseInt(prompt('nhap thoi gian'));
+  /!*!//cach tinh theo toan hoc
+  let q= ((1+b)**c)*a;
+  console.log(q);*!/
+  for (let i=0;i<c;i++){
+      a= a + a*b/100
+  }
+  console.log(a);
+*/
+
+//ve tam giac trai
+  let n=prompt('');
+  for (let x=1;x<=n;x++){
+      let v='';
+      for (let y=n-x; y>1; y--){
+          v+= '&nbsp';
+      }
+      for(let z =1;z<x;z++){
+          v+='*';
+      }
+      document.write(v+'<br>');
+  }
+</script>
+</body>
+</html>

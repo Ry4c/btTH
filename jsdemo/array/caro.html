@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CARO</title>
+</head>
+<body>
+<pre id="ma"></pre>
+<button onclick="thay()">vi tri</button>
+
+<script>
+let arr=[];
+let n= parseInt(prompt('nhap'));
+let m= parseInt(prompt('nhap lan nua'));
+let d = `<table> `;
+ for (let i=0; i<n; i++){
+     arr[i]=[];
+     for (let j=0; j<m; j++){
+         arr[i][j]='0';
+     }
+
+ }
+console.log(arr.length);
+for (let i=0; i<n; i++) {
+    d += `<tr>`;
+    for (let j = 0; j < m; j++) {
+        d += `<td>${arr[i][j]}</td>`;
+    }
+    d += `</tr>`;
+}
+d += `</table>`
+document.getElementById('ma').innerHTML= d;
+
+
+function thay(){
+    let a = prompt('nhap toa do ngang');
+    let b = prompt('nhap toa do doc');
+    arr[b-1][a-1]="x" ;
+    let x =`<table>`
+    for (let i=0; i<n; i++) {
+        x += `<tr>`;
+        for (let j = 0; j < m; j++) {
+            x += `<td>${arr[i][j]}</td>`;
+        }
+        x += `</tr>`;
+    }
+    x += `</table>`
+    document.getElementById('ma').innerHTML= x;
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's guess!</title>
+</head>
+<body>
+<button onclick="start()">start!</button>
+<script>
+    function start(){
+        let c=1;
+        let a= parseInt(prompt('nhap so','min'));
+        let b= parseInt(prompt('nhap so','max'));
+        let x = Math.floor(Math.random()*(b-a+1))+a;
+        console.log(x);
+        let y = parseInt(prompt('let guess'));
+        for (let i = 0;i<=2;i++){
+            //y = parseInt(prompt('let guess'));
+            if (y==x){
+                alert('UR good!');
+                c++;
+                break;
+            }else if(i<2){y = parseInt(prompt('oh try again'));}
+        }
+        if (c==1){alert('UR bad!');}
+    }
+</script>
+</body>
+</html>

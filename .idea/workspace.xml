@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jsdemo/BMI/BMI-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/dichuyen/ballDemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/maytinh2/maytinh2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/ngayTrongThang/daysInMonth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/add_.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/arrNReverse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/caro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/dictionary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/fkinTxt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/reverseUppercase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/array/scrip_arr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/bang9Chuong/bang9Chuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/loop/game doan so.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/loop/loop1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/loop/loop2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/luyenTapIfElse/ifElsePractice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/puzzle/puzzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/tictactoe/tictactoe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsdemo/btjs4-doitien.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/btjs4-doitien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsdemo/js-doitien.js" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/js-doitien.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsdemo/maytinh2/maytinh2.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/maytinh2/maytinh2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsdemo/test-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/test-code.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Windows/Documents/GitHub/btTH&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,11 +81,28 @@
       <workItem from="1683707599203" duration="276000" />
       <workItem from="1683713147555" duration="1402000" />
       <workItem from="1683766007603" duration="13700000" />
-      <workItem from="1683852684276" duration="17643000" />
+      <workItem from="1683852684276" duration="17890000" />
+      <workItem from="1684112651946" duration="1566000" />
+      <workItem from="1684114808025" duration="14667000" />
+      <workItem from="1684139207311" duration="18852000" />
+      <workItem from="1684284954068" duration="12697000" />
+      <workItem from="1684371800952" duration="16946000" />
+      <workItem from="1684458240148" duration="7240000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
