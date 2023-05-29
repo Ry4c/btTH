@@ -1,11 +1,10 @@
 let listStu=[];
 let ind=0;
-let en = new Student('en', 'stu1', '12/02/1999', 'chua biet', '1a23c','7.7','./source/en.png');
-let pika = new Student('pika', 'stu2', '12/07/1999', 'none', '1a23c','8.0','./source/pikacringe.png');
-let pepe = new Student('pepe', 'stu3', '12/08/1999', 'henxui', '1a23c','7.2','./source/pepe.png');
+let en = new Student('Én', 'stu1', '12/02/1999', 'chua biet', '1a23c','7.7','./source/en.png');
+let pika = new Student('Pika', 'stu2', '12/07/1999', 'none', '1a23c','8.0','./source/pikacringe.png');
+let pepe = new Student('Pepe', 'stu3', '12/08/1999', 'henxui', '1a23c','7.2','./source/pepe.png');
 
 listStu.push(en, pika, pepe);
-console.log(listStu);
 function display(){
     let d=''
     for (let i=0; i<listStu.length; i++){
@@ -29,8 +28,18 @@ function clear(){
     document.getElementById('score').value='';
     document.getElementById('pic').value='';
 }
+function checkId(a){
+    let flag = true;
+    for (let i=0; i<listStu.length; i++){
+        if(listStu[i].id === a){
+            flag= false;
+            break;
+        }
+    }
+    return flag;
+}
 function add(){
-    let stu = new Student(
+    if(checkId(document.getElementById('id').value)){let stu = new Student(
         document.getElementById('name').value,
         document.getElementById('id').value,
         document.getElementById('doB').value,
@@ -40,9 +49,13 @@ function add(){
         document.getElementById('pic').value,
     )
     listStu.push(stu);
-    console.log(listStu);
     clear();
     display();
+}else{
+    alert('Trùng ID! Vui lòng kiểm tra lại');
+    clear();
+}
+    
 }
 function btnsave(){
     document.getElementById('formButton').innerHTML='<button onclick="save()" style="width: 70px; font-size: 16px">save</button>';
@@ -60,16 +73,15 @@ function edit(i){
     document.getElementById('pic').value = listStu[i].pic;
     btnsave();
     ind=i;
-    console.log(ind);
 }
 function save(){
-    listStu[ind].setName(document.getElementById('name').value);
-    listStu[ind].setId(document.getElementById('id').value);
-    listStu[ind].setDoB(document.getElementById('doB').value);
-    listStu[ind].setGender(document.getElementById('gender').value);
-    listStu[ind].setClass(document.getElementById('clas').value);
-    listStu[ind].setScore(document.getElementById('score').value);
-    listStu[ind].setPic(document.getElementById('pic').value);
+    listStu[ind].name= document.getElementById('name').value;
+    listStu[ind].id= document.getElementById('id').value;
+    listStu[ind].doB= document.getElementById('doB').value;
+    listStu[ind].gender= document.getElementById('gender').value;
+    listStu[ind].class= document.getElementById('clas').value;
+    listStu[ind].score= document.getElementById('score').value;
+    listStu[ind].pic= document.getElementById('pic').value;
     btnback();
     clear();
     display();

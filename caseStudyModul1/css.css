@@ -5,10 +5,16 @@ h2{
     text-align: center;
     color: blue;
 }
-div{
+div#menu{
+    width: 1405px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: aqua;
 }
+div#edit{
+    width: 1405px;
+    display: flex;
+    justify-content: space-around;}
 button{
     border-radius: 4px;
     padding: 5px;
@@ -20,7 +26,7 @@ button:hover{
 tbody{
     border: gray 2px solid;
 }
-tr:nth-child(even){
+table#info tr:nth-child(even){
     background-color: #f2f2f2;
 }
 table#info{

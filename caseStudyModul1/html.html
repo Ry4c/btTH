@@ -8,9 +8,33 @@
 <body onload="display()">
 <img src="https://uet.vnu.edu.vn/wp-content/uploads/2014/06/bannerV1.png">
 <h2>QUẢN LÝ HỌC SINH</h2>
-<div>
+<div id="menu"> 
   <span>
-    <table>
+    <button onclick="searchName()">Danh Sách</button>
+    <button onclick="searchName()">Chỉnh sửa thông tin</button>
+  </span>
+  <span>
+    <input type="text" placeholder="Search by Name" id="search">
+    <button onclick="searchName()">Tìm kiếm</button>
+  </span>
+</div>
+<div id="view" class="data">
+  <table>
+    <tr>
+      <th>pic</th>
+      <th>HỌ VÀ TÊN</th>
+      <th>id</th>
+      <th>Ngày Sinh</th>
+      <th>Giới tính</th>
+      <th>lớp</th>
+      <th>Điểm  trung bình</th>
+    </tr>
+    <tbody></tbody>
+  </table>
+</div>
+<div id="edit" class="data">
+  <span>
+    <table id="form">
         <tr> 
           <th colspan="2">Thông tin học viên</th>
         </tr>
