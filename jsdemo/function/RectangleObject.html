@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body >
+
+<canvas id="myCanvas" width="733px" height="500px" style="border: gray 2px solid"></canvas>
+<script>
+  class Rectangle{
+    height;
+    width;
+    constructor(height, width) {
+      this.height = height;
+      this.width = width;
+    }
+    getHeight(){return this.height;}
+    getWidth(){return this.width;}
+    area(){
+      return this.height*this.width;
+    }
+    perimeter(){
+      return 2*(this.height+this.width);
+    }
+  }
+  let rec1 = new Rectangle(120,45);
+  console.log(rec1.area());
+  console.log(rec1.perimeter());
+  function draw(rectangle){
+    let c=document.getElementById('myCanvas').getContext('2d');
+    c.moveTo(20,20);
+    c.lineTo(20, 20+rectangle.width);
+    c.lineTo(20+rectangle.height, 20+rectangle.width);
+    c.lineTo(20+rectangle.height, 20);
+    c.lineTo(20, 20);
+    c.stroke();
+  }
+  draw(rec1);
+  let rec2 = new  Rectangle(345, 90);
+  draw(rec2);
+</script>
+</body>
+</html>

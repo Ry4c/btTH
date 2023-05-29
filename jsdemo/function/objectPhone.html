@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone</title>
+</head>
+<body>
+<script>
+  let Phone= function (pin, writing, inbox, sent, status){
+    this.pin= pin;
+    this.writing= writing;
+    this.inbox= inbox;
+    this.sent= sent;
+    this.status= status;
+    this.powerCheck= function (){
+      return this.status;
+      this.pin -= 1;
+    }
+    this.turnOn= function (){
+      this.status= 'on';
+      this.pin -= 1;
+    }
+    this.turnOff= function (){
+      this.status= 'off';
+    }
+    this.pinCheck= function (){
+      return this.pin;
+      this.pin -= 1;
+    }
+    this.writing= function (a){
+      this.writting=a;
+      this.pin -= 1;
+    }
+    this.send= function (b){
+      this.sent= this.writting;
+      this.writting='';
+      b.inbox=this.sent;
+      this.pin -= 1;
+    }
+    this.inboxCheck= function (){
+      return this.inbox;
+      this.pin -= 1;
+    }
+  }
+
+</script>
+
+</body>
+</html>

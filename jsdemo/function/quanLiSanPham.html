@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quan Ly San Pham</title>
+  <style>
+      .info{
+          display: flex;
+          justify-content: space-around;
+      }
+    button{
+      text-align: center;
+      width: 70px;
+      height: 40px;
+      background-color: lawngreen;
+      margin-left: 15px;
+    }
+    input{
+      height: 40px;
+      width: 400px;
+    }
+    li{
+        padding-top: 15px;
+        padding-bottom: 5px;
+        list-style: none;
+        margin: 0 30px;
+        height: 45px;
+    }
+    .items{
+        width: 350px;
+        padding: 0 2px;
+        margin: 10px 20px;
+        text-align: left;
+    }
+    .btn{
+        position: absolute;
+        left: 800px;
+    }
+    li:nth-child(even){
+        background-color: lightgrey;
+    }
+  </style>
+</head>
+<body onchange="show()">
+<div style="text-align: center">
+<h2>Add New Product</h2>
+  <input  id="input" type="text">
+  <button onclick="addprd()">Add</button>
+</div>
+<h2 style="text-align: center">DISPLAY ALL PRODUCT</h2>
+<div class="info">
+    <span style="margin-left: 40px">product name</span>
+    <span id="quantity" >0 product</span>
+</div>
+<hr>
+<ul id="item"></ul>
+<script>
+    let input = document.getElementById('input');
+let product=[];
+function show(){
+    a='';
+    for(let i=0; i<product.length; i++){
+        a +=
+            `<li><span class="items"> ${product[i]}</span>
+            <span class="btn"><button onclick="change(${i})">edit</button>
+            <button onclick="del(${i})">delete</button> </li></span>`
+    }
+    document.getElementById('item').innerHTML=a;
+    document.getElementById('quantity').innerText=`${product.length} product(s)`;
+}
+function addprd(){
+    product.push(input.value);
+    input.value='';
+    show();
+}
+function change(prd){
+    product[prd]=prompt ('sua doi san pham', product[prd]);
+    show();
+}
+function del(i){
+    product.splice(i,1);
+    show();
+    }
+</script>
+</body>
+</html>

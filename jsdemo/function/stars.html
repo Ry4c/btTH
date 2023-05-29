@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stars</title>
+</head>
+<body onload="check(prompt())">
+<script>
+  let a=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+  let b=['Ursa Minor', 'Taurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+  function check(n){
+    if(a.indexOf(n)==-1){
+      console.log(`don't know`);
+    }else{
+      console.log(`${n} is in ${b[a.indexOf(n)]}`)
+    }
+  }
+</script>
+</body>
+</html>

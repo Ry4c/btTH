@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check in string</title>
+</head>
+<body>
+<script>
+  checkChar(prompt(),prompt());
+  function checkChar(a,b){
+    if(a.indexOf(b)==-1){
+      console.log(a.indexOf(b))
+    }else{
+      let count=0;
+      for(let i=0; i<a.length; i++){
+        if(a[i]==b){count++;}
+      }
+      console.log(count);
+    }
+  }
+</script>
+</body>
+</html>

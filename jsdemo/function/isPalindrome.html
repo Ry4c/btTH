@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome</title>
+</head>
+<body>
+<script>
+  let a = prompt();
+  alert(isPalindrome(a));
+  function isPalindrome(b){
+    let newOne ='';
+    for(let i=0; i<b.length; i++){
+      newOne += b[i];
+    }
+    return (newOne==b);
+  }
+</script>
+</body>
+</html>

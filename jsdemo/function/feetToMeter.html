@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FtoM</title>
+</head>
+<body>
+<p>feet:</p>
+<input id="f" oninput="fToM(this.value)" onchange="fToM(this.value)" type="number"><br>
+<p>meter:</p>
+<input id="m" oninput="mToF(this.value)" onchange="mToF(this.value)" type="number"><br>
+<script>
+  function fToM(value){
+    let a=parseInt(document.getElementById('f').value);
+    document.getElementById('m').value= a*0.305;
+  }
+  function mToF(value){
+    let a=parseInt(document.getElementById('m').value);
+    document.getElementById('f').value= a*3.279;
+  }
+</script>
+</body>
+</html>

@@ -5,22 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/add_.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/arrNReverse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/caro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/dictionary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/fkinTxt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/reverseUppercase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/array/scrip_arr.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/bang9Chuong/bang9Chuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/loop/game doan so.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/loop/loop1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/loop/loop2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/luyenTapIfElse/ifElsePractice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/puzzle/puzzle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsdemo/tictactoe/tictactoe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudyModul1/class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudyModul1/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudyModul1/html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudyModul1/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/RectangleObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/checkMin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/daoNguocMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/fToC.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/feetToMeter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/isPalindrome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/isPrime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/kiemTraChuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/minInArray.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/objectPhone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/processConfirm demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/quanLiSanPham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/stars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsdemo/function/tinhGiaiThua.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsdemo/maytinh2/maytinh2.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/maytinh2/maytinh2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsdemo/array/add_.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/array/add_.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsdemo/array/doidautru.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/array/doidautru.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jsdemo/test-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsdemo/test-code.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,25 +53,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Windows/Documents/GitHub/btTH&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Windows/Documents/GitHub/btTH",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Windows\Documents\GitHub\btTH\jsdemo" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test-code.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js-doitien.js/jsdemo/test-code.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test-code.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,7 +105,11 @@
       <workItem from="1684139207311" duration="18852000" />
       <workItem from="1684284954068" duration="12697000" />
       <workItem from="1684371800952" duration="16946000" />
-      <workItem from="1684458240148" duration="7240000" />
+      <workItem from="1684458240148" duration="12211000" />
+      <workItem from="1684718914142" duration="30717000" />
+      <workItem from="1684828650813" duration="30768000" />
+      <workItem from="1685066316298" duration="11694000" />
+      <workItem from="1685322154780" duration="10485000" />
     </task>
     <servers />
   </component>

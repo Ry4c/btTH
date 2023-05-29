@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Check</title>
+</head>
+<body>
+<script>
+  let n=parseInt(prompt('nhap n'));
+  isPrime(n);
+    function isPrime(a) {
+      if (2 < a && a < 10000) {
+          let flag = true;
+          for (let i = 2; i<a; i++) {
+              if (a % i == 0) {
+                  flag = false;
+                  if (flag = false) {
+                      break;
+                  }
+              }
+          }
+          if (flag){
+              console.log(`${a} is prime`);
+          }else {
+              console.log(`${a} is not prime`)
+          }
+      }else {
+          console.log(`out of zone`);
+      }
+  }
+
+</script>
+</body>
+</html>

@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  //nhập dữ liệu:
+  let n=parseInt(prompt('nhap so phan tu'));
+  let a=[], b=[];
+  for (let i=0; i<n; i++){
+    a[i]=prompt('nhap phan tu thu'+i+1);
+  }
+  //chuyển string thành array
+   for (let i=0; i<n; i++ ){
+     b[i]=[];
+     for(let j=0; j<a[i].length; j++){
+       b[i][j]= a[i][j];
+     }
+   }
+
+   //đổi dấu '-' thành '_'
+  let c=[];
+  for(let i=0;i<b.length;i++) {
+    let st='';
+    while(b[i].indexOf('-') > -1) {
+      let n = b[i].indexOf('-');
+      b[i][n] = '_';
+      st+= b[i][n];
+      // console.log(st);
+    }
+    c[i] = b[i];
+  }
+  let kq=[];
+  for (let i=0; i<n; i++ ){
+      kq[i]='';
+      for(let j=0; j<a[i].length; j++){
+          kq[i]+= c[i][j];
+      }
+  }
+  console.log(kq);
+</script>
 </body>
 </html>

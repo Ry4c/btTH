@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reverse</title>
+</head>
+<body>
+<script>
+  let array=[1,63,1426,137,16542,251,853];
+
+  rv(array);
+  function rv(arr){
+    let a;
+    for (i=0;i<arr.length/2;i++){
+      a=arr[i];
+      arr[i]=arr[arr.length-i-1];
+      arr[arr.length-i-1]=a;
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    font-family: "Times New Roman";
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    border-radius: 4px;
+    padding: 5px;
+}
+button:hover{
+    background-color: darkgrey;
+    color: darkblue;
+}
+tbody{
+    border: gray 2px solid;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+table#info{
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    width: 450px;
+    margin: 0;
+}
+img.imgsize{
+    width: 80px;
+    height: 80px;
+}

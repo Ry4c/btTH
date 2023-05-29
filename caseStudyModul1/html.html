@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudentManager</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body onload="display()">
+<img src="https://uet.vnu.edu.vn/wp-content/uploads/2014/06/bannerV1.png">
+<h2>QUẢN LÝ HỌC SINH</h2>
+<div>
+  <span>
+    <table>
+        <tr> 
+          <th colspan="2">Thông tin học viên</th>
+        </tr>
+        <tr>
+          <td>Họ và Tên</td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td>ID</td>
+          <td><input type="text" id="id"></td>
+        </tr>
+        <tr>
+          <td>Ngày sinh</td>
+          <td><input type="date" id="doB"></td>
+        </tr>
+        <tr>
+          <td>Giới tính</td>
+          <td><input type="text" id="gender"></td>
+        </tr>
+        <tr>
+          <td>Lớp</td>
+          <td><input type="text" id="clas"></td>
+        </tr>
+        <tr>
+          <td>Điểm trung bình</td>
+          <td><input type="number" id="score"></td>
+        </tr>
+        <tr>
+          <td>Link ảnh</td>
+          <td><input type="text" id="pic"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td id="formButton" style="text-align: center">
+            <button  onclick="add()" style="width: 70px; font-size: 16px">add</button></td>
+        </tr>
+      </table>
+  </span>
+
+  <span>
+      <table id="info">
+        <tr>
+          <td></td>
+          <td>họ và tên</td>
+          <td>id</td>
+          <td>lớp</td>
+          <td></td>
+        </tr>
+        <tbody id="list"></tbody>
+      </table>
+  </span>
+
+</div>
+
+</body>
+</html>
+<script src="class.js"></script>
+<script src="js.js"></script>
