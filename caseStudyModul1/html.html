@@ -5,34 +5,37 @@
     <title>StudentManager</title>
     <link rel="stylesheet" href="css.css">
 </head>
-<body onload="display()">
-<img src="https://uet.vnu.edu.vn/wp-content/uploads/2014/06/bannerV1.png">
+<body onload="checkAccess()" >
+<div id="top">
+<img src=./source/banner.png width="auto">
 <h2>QUẢN LÝ HỌC SINH</h2>
-<div id="menu"> 
-  <span>
-    <button onclick="searchName()">Danh Sách</button>
-    <button onclick="searchName()">Chỉnh sửa thông tin</button>
-  </span>
-  <span>
-    <input type="text" placeholder="Search by Name" id="search">
-    <button onclick="searchName()">Tìm kiếm</button>
-  </span>
+    <div id="menu">
+      <span>
+        <button class="menu" onclick="viewList()">Danh Sách</button>
+        <button class="menu" onclick="viewEdit()">Chỉnh sửa thông tin</button>
+        <button class="menu" style="display: none" id="tabSearch">Kết quả tìm kiếm</button>
+      </span>
+      <span>
+        <input type="text" placeholder="Search by Name" id="search">
+        <button onclick="searchName()">Tìm kiếm</button>
+      </span>
+    </div>
 </div>
-<div id="view" class="data">
-  <table>
+<div id="viewer" class="data" style="display: none">
+  <table id="view" class="list">
     <tr>
-      <th>pic</th>
-      <th>HỌ VÀ TÊN</th>
-      <th>id</th>
-      <th>Ngày Sinh</th>
-      <th>Giới tính</th>
-      <th>lớp</th>
-      <th>Điểm  trung bình</th>
+      <th style="width: 100px"></th>
+      <th onclick="sortName()" style="width: 300px">HỌ VÀ TÊN</th>
+      <th onclick="sortName()" style="width: 100px">ID</th>
+      <th style="width: 100px">Ngày Sinh</th>
+      <th style="width: 100px">Giới tính</th>
+      <th style="width: 100px">lớp</th>
+      <th onclick="sortScore()" style="width: 100px">Điểm  trung bình</th>
     </tr>
-    <tbody></tbody>
+    <tbody id="viewAll"></tbody>
   </table>
 </div>
-<div id="edit" class="data">
+<div id="editor" class="data"  style="display: none">
   <span>
     <table id="form">
         <tr> 
@@ -48,7 +51,7 @@
         </tr>
         <tr>
           <td>Ngày sinh</td>
-          <td><input type="date" id="doB"></td>
+          <td><input type="text" id="doB"></td>
         </tr>
         <tr>
           <td>Giới tính</td>
@@ -75,7 +78,7 @@
   </span>
 
   <span>
-      <table id="info">
+      <table id="info" class="list">
         <tr>
           <td></td>
           <td>họ và tên</td>
@@ -83,9 +86,11 @@
           <td>lớp</td>
           <td></td>
         </tr>
-        <tbody id="list"></tbody>
+        <tbody id="listEdit"></tbody>
       </table>
   </span>
+</div>
+<div class="data" id="searchResult" style="display: none">
 
 </div>
 

@@ -6,13 +6,14 @@ h2{
     color: blue;
 }
 div#menu{
-    width: 1405px;
     display: flex;
     justify-content: space-between;
     background-color: aqua;
 }
-div#edit{
-    width: 1405px;
+div#top{
+    width: auto;
+}
+div#editor{
     display: flex;
     justify-content: space-around;}
 button{
@@ -23,11 +24,24 @@ button:hover{
     background-color: darkgrey;
     color: darkblue;
 }
+button.menu{
+    background-color: blue;
+    color: coral;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    margin: 0;
+    height: 30px;
+}
 tbody{
     border: gray 2px solid;
 }
-table#info tr:nth-child(even){
+table.list tr:nth-child(even){
     background-color: #f2f2f2;
+}
+table#viewer th{
+    resize: horizontal;
+    overflow: auto;
 }
 table#info{
     text-align: center;
