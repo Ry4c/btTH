@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="them search">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudyModul1/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudyModul1/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudyModul1/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/js.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +98,17 @@
       <workItem from="1685408215764" duration="22000" />
       <workItem from="1685408641838" duration="21516000" />
       <workItem from="1685441521197" duration="85000" />
-      <workItem from="1685495067081" duration="5037000" />
+      <workItem from="1685495067081" duration="5152000" />
+      <workItem from="1685508626649" duration="1690000" />
     </task>
+    <task id="LOCAL-00001" summary="finish">
+      <created>1685502267946</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685502267946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="them search" />
-    <option name="LAST_COMMIT_MESSAGE" value="them search" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
 </project>

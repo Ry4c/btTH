@@ -100,6 +100,16 @@ function checkId(a){
     }
     return flag;
 }
+function checkIdEdit(a){
+    let flag = true;
+    for (let i=0; i<listStu.length; i++){
+        if(listStu[i].id === a && i !==ind){
+            flag= false;
+            break;
+        }
+    }
+    return flag;
+}
 function add(){
     if(checkId(document.getElementById('id').value)){
         let stu = new Student(
@@ -137,7 +147,7 @@ function edit(i){
     ind=i;
 }
 function save(){
-    if (checkId(document.getElementById('id').value)){
+    if (checkIdEdit(document.getElementById('id').value)){
         listStu[ind].name= document.getElementById('name').value;
         listStu[ind].id= document.getElementById('id').value;
         listStu[ind].doB= document.getElementById('doB').value;
