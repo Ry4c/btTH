@@ -1,8 +1,10 @@
 let listStu=[];
 let ind=0;
-let en = new Student('Én', 'stu1', '12/02/1999', 'chua biet', '1a23c','7.7','./source/en.png');
-let pika = new Student('Pika', 'stu2', '12/07/1999', 'none', '1a23c','8.0','./source/pikacringe.png');
-let pepe = new Student('Pepe', 'stu3', '12/08/1999', 'henxui', '1a23c','7.2','./source/pepe.png');
+let switchId= false;
+let switchScore= false;
+let en = new Student('Én', 'st1', '12/02/1999', 'chua biet', '1a23c','7.7','./source/en.png');
+let pika = new Student('Pika', 'st2', '12/07/1999', 'none', '1a23c','8.0','./source/pikacringe.png');
+let pepe = new Student('Pepe', 'st3', '12/08/1999', 'henxui', '1a23c','7.2','./source/pepe.png');
 let lockView=false;
 let lockEdit=false;
 
@@ -16,8 +18,12 @@ function checkAccess(){
     if(psw === 'view'){
         lockView=true;
         viewList();
+    }else if(psw === 'admin'){
+        lockView=true;
+        lockEdit=true;
+        viewList();
     }else {
-        alert('Wrong!')
+        alert('Wrong!');
     }
 }
 function checkEdit(){
@@ -162,16 +168,17 @@ function search(){
     return flag;
 }
 function searchName(){
-    if (search()){
-        document.getElementById('tabSearch').style.display='block';
-        document.getElementById('searchResult').style.display='block';
-        document.getElementById('editor').style.display= "none";
-        document.getElementById('viewer').style.display= "none" ;
-        let q= document.getElementById('search').value;
-        let d=''
-        for (let i=0; i<listStu.length; i++){
-            if (listStu[i].name===q){
-                d+= `<table>
+    if (lockEdit || lockView){
+        if (search()){
+            document.getElementById('tabSearch').style.display='block';
+            document.getElementById('searchResult').style.display='block';
+            document.getElementById('editor').style.display= "none";
+            document.getElementById('viewer').style.display= "none" ;
+            let q= document.getElementById('search').value;
+            let d=''
+            for (let i=0; i<listStu.length; i++){
+                if (listStu[i].name===q){
+                    d+= `<table>
                     <tr>
                          <td rowspan="6"> <img src="${listStu[i].pic}"></td>
                          <td>${listStu[i].name} </td>
@@ -193,8 +200,38 @@ function searchName(){
                     </tr>
                      
                 </table>`;
+                }
             }
-        }
-        document.getElementById('searchResult').innerHTML= d;
-    }else {alert('Không tìm thấy!')}
+            document.getElementById('searchResult').innerHTML= d;
+        }else {alert('Không tìm thấy!')}
+    }
+}
+
+function sortScore(){
+    if(switchScore){
+        listStu.sort((a,b) => (a.score-b.score));
+        switchScore= false;
+    }else{
+        listStu.sort((a,b) => (b.score-a.score));
+        switchScore= true;
+    }
+    viewList();
+}
+function sortId(){
+    if (switchId){
+        listStu.sort(function(a, b) {
+            let left = a.name;
+            let right = b.name;
+            return left === right ? 0 : left > right ? 1 : -1;
+        })
+        switchId=false;
+    }else {
+        listStu.sort(function(a, b) {
+            let left = a.name;
+            let right = b.name;
+            return left === right ? 0 : left < right ? 1 : -1;
+        })
+        switchId=true;
+    }
+    viewList();
 }
