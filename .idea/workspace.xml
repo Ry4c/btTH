@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="finish">
+    <list default="true" id="e1159ecb-0fcf-4fac-bd05-1682942d3827" name="Changes" comment="fix something">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudyModul1/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudyModul1/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudyModul1/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudyModul1/source/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudyModul1/source/banner.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,12 @@
       <workItem from="1685408641838" duration="21516000" />
       <workItem from="1685441521197" duration="85000" />
       <workItem from="1685495067081" duration="5152000" />
-      <workItem from="1685508626649" duration="1690000" />
+      <workItem from="1685508626649" duration="5729000" />
+      <workItem from="1685581679145" duration="2743000" />
+      <workItem from="1685589352533" duration="20000" />
+      <workItem from="1685591752190" duration="1332000" />
+      <workItem from="1685602792467" duration="1315000" />
+      <workItem from="1685671652209" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="finish">
       <created>1685502267946</created>
@@ -108,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685502267946</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix something">
+      <created>1685515154250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685515154250</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="them search" />
     <MESSAGE value="finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+    <MESSAGE value="fix something" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix something" />
   </component>
 </project>

@@ -15,7 +15,15 @@ div#top{
 }
 div#editor{
     display: flex;
-    justify-content: space-around;}
+    justify-content: space-around;
+}
+table#searchResult{
+    display: flex;
+    align-self: center;
+    width: max-content;
+    margin: auto;
+    border: none;
+}
 button{
     border-radius: 4px;
     padding: 5px;

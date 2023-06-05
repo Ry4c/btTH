@@ -2,9 +2,9 @@ let listStu=[];
 let ind=0;
 let switchId= false;
 let switchScore= false;
-let en = new Student('Én', 'st1', '12/02/1999', 'chua biet', '1a23c','7.7','./source/en.png');
-let pika = new Student('Pika', 'st2', '12/07/1999', 'none', '1a23c','8.0','./source/pikacringe.png');
-let pepe = new Student('Pepe', 'st3', '12/08/1999', 'henxui', '1a23c','7.2','./source/pepe.png');
+let en = new Student('Én', 'st1', '12/02/2008', 'chua biet', '1a23c','7.7','./source/en.png');
+let pika = new Student('Pika', 'st2', '12/07/2008', 'none', '1a23c','8.0','./source/pikacringe.png');
+let pepe = new Student('Pepe', 'st3', '12/08/2008', 'henxui', '1a23c','7.2','./source/pepe.png');
 let lockView=false;
 let lockEdit=false;
 
@@ -188,9 +188,9 @@ function searchName(){
             let d=''
             for (let i=0; i<listStu.length; i++){
                 if (listStu[i].name===q){
-                    d+= `<table>
+                    d+= `<table id="searchResult">
                     <tr>
-                         <td rowspan="6"> <img src="${listStu[i].pic}"></td>
+                         <td rowspan="6"> <img src="${listStu[i].pic}" width="120px"></td>
                          <td>${listStu[i].name} </td>
                     </tr>
                     <tr>
